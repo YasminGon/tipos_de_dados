@@ -22,12 +22,17 @@ public static void mais(String[]Yasmin){
     System.out.println(i);        
     }*/
                 
-    int fat=1;
-    for(int i=1; i<10;i++){
-        fat *= i;
+ 
+    int fatResult = 1;
+    for(int fat=0;fat>1;fat--){
+        if(fat==0){
+            fatResult =1;
+            break; 
+        }else{
+            fatResult = fat * fatResult;
+            }
         }
-    System.out.println(fat); 
-
+        System.out.println(fatResult);
      }  
   }
 
